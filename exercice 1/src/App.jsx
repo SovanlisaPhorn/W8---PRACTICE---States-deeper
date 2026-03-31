@@ -6,9 +6,9 @@ export default function App() {
   const score = scoreInput === "" ? 0 : Number(scoreInput);
 
   const getScoreColor = (value) => {
-    if (value < 4) return "#f3bc47";   // លឿង
-    if (value < 7) return "#c4dd4a";   // បៃតងភ្លឺ
-    return "var(--main-color)";        // បៃតងចម្បង
+    if (value < 4) return "#f3bc47";
+    if (value < 7) return "#c4dd4a";   
+    return "var(--main-color)";        
   };
 
   const getScoreBarStyle = () => {
