@@ -12,7 +12,7 @@ export default function App() {
   const [stuffs, setStuffs] = React.useState(INITIAL_STUFFS);
 
   const handleAddStuff = (newStuff) => {
-    setStuffs([...stuffs, newStuff]); // immutable update
+    setStuffs([...stuffs, newStuff]); 
     console.log(
       `A new object named ${newStuff.name}, price ${newStuff.price}$ will be added to the list`
     );
