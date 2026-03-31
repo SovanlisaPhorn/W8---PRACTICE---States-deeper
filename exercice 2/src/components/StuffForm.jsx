@@ -7,13 +7,11 @@ export default function StuffForm({ onAddStuff }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // បង្កើត object ថ្មី
     const newStuff = {
       name: name.trim(),
       price: parseFloat(price),
     };
 
-    // ផ្ញើទៅ App
     onAddStuff(newStuff);
 
     // Reset form
